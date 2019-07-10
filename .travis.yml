@@ -1,4 +1,12 @@
+dist: trusty
+sudo: false
 language: cpp
 
-cpp:
-        - 17
+script:
+        - cmake .
+        - cmake --build . -- -j2 
+
+
+
+
+      
